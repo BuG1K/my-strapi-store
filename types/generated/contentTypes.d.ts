@@ -515,7 +515,7 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    description: Schema.Attribute.String;
+    description: Schema.Attribute.Text;
     dimensions: Schema.Attribute.String;
     discount: Schema.Attribute.Integer;
     gradient: Schema.Attribute.String;
