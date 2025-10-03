@@ -27,7 +27,8 @@
       "type": "string"
     },
     "isNewArrival": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": true
     },
     "rating": {
       "type": "decimal"

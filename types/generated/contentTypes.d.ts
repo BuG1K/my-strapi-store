@@ -521,7 +521,7 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
     gradient: Schema.Attribute.String;
     img: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios', true>;
     inStock: Schema.Attribute.Boolean;
-    isNewArrival: Schema.Attribute.Boolean;
+    isNewArrival: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
