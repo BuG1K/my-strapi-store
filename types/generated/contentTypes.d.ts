@@ -533,7 +533,7 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
     oldPrice: Schema.Attribute.Decimal;
     price: Schema.Attribute.Decimal;
     publishedAt: Schema.Attribute.DateTime;
-    rating: Schema.Attribute.Decimal;
+    rating: Schema.Attribute.Decimal & Schema.Attribute.DefaultTo<5>;
     reviewCount: Schema.Attribute.Decimal;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &

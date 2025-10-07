@@ -31,7 +31,8 @@
       "default": true
     },
     "rating": {
-      "type": "decimal"
+      "type": "decimal",
+      "default": 5
     },
     "reviewCount": {
       "type": "decimal"
